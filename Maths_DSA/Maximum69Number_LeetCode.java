@@ -1,7 +1,5 @@
 package Maths_DSA;
 
-import java.util.Arrays;
-
 public class Maximum69Number_LeetCode {
 
     public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class Maximum69Number_LeetCode {
 
     public static int maximum69Number(int num) {
         String str = Integer.toString(num);
-        int ans = str.parseInt(str.replaceFirst("6","9"));
+        int ans = Integer.parseInt(str.replaceFirst("6","9"));
         return ans;
     }
 }
