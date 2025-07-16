@@ -23,14 +23,16 @@ public class reverse_the_Linked_List {
     }
 
     static ListNode reverse(ListNode head){
-        ListNode temp = head.next;
-        head.next = null;
-        while (temp.next!=null){
-            temp.next = head;
-            temp = temp.next;
+        ListNode temp = null;  // take null -> imp
+        ListNode temp2;
+        while(head != null){
+            temp2 = head.next;
+            head.next = temp;
+            temp = head;
+            head = temp2;
         }
-        display(head);
-        return head;
+        display(temp);
+        return temp;
     }
 
     public static void main(String[] args) {

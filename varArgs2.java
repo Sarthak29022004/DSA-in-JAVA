@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class varArgs {
+public class varArgs2 {
     public static void main(String[] args) {
         fun(2, 3, 4, 5, 6, 45, 67);
         multiple(5, 15, "Sarthak", "Nagesh", "Akshay");
