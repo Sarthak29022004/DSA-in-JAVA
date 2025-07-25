@@ -17,3 +17,14 @@ public class find_multiple_duplicates {
         }
     }
 }
+
+
+//        Map<Integer, Integer> map = new HashMap<>();
+//        Set<Integer> duplicates = new HashSet<>();
+//
+//        for (int num : arr) {
+//            map.put(num, map.getOrDefault(num, 0) + 1);
+//            if (map.get(num) == 2) {
+//                duplicates.add(num);  // Only add when it's confirmed duplicate
+//            }
+//        }
